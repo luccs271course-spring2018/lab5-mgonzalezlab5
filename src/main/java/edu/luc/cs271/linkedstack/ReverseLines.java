@@ -7,20 +7,23 @@ public class ReverseLines {
   public static void main(String[] args) {
     // TODO read successive input lines until EOF, then print out in reverse order
 
-    LinkedStack<Character> stack = new LinkedStack<Character>();
+    LinkedStack<String> stack = new LinkedStack<String>();
+    System.out.println("Enter as many lines as you want");
+    System.out.println("Press enter twice when finished");
 
     final Scanner input = new Scanner(System.in);
     String line;
-    while ((line = input.nextLine()) != null) {
-      System.out.println(line);
-      for (int i = 0; i < line.length(); i++) {
-        stack.push(line.charAt(i));
+
+    while (input.hasNextLine()) {
+      line = input.nextLine();
+      stack.push(line);
+      if (line.equals("")) {
+        break;
       }
-      String word = " ";
-      for (int i = 0; i < line.length(); i++) {
-        word += stack.pop();
-      }
-      System.out.println(word);
+    }
+
+    while (!stack.isEmpty()) {
+      System.out.println(stack.pop());
     }
   }
 }
