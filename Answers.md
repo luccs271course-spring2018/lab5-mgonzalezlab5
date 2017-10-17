@@ -24,13 +24,13 @@
 4) Is it better for push and pop to return the item or the stack itself? Briefly discuss the pros and cons of each design.
   - Better to return item 
   
-  Item:
+  * Item:
     - Pros: 
       - Takes less time to return 1 item
     - Cons:
       - Only get 1 item at a time. Can't see everything at once.
   
-  Stack:
+  * Stack:
     - Pros:
       - Can see everything at once
     - Cons:
