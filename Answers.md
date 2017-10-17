@@ -22,4 +22,16 @@
 3) How else (not using Node) could we have implemented LinkedStack in such a way that it is still based on a linked list but the asList method uses constant time and space? 
   - We could've implemented LinkedStack using a LinkedList becasue it allows for constant time insertions and removals
 4) Is it better for push and pop to return the item or the stack itself? Briefly discuss the pros and cons of each design.
-  - 
+  - Better to return item 
+  
+  Item:
+    - Pros: 
+      - Takes less time to return 1 item
+    - Cons:
+      - Only get 1 item at a time. Can't see everything at once.
+  
+  Stack:
+    - Pros:
+      - Can see everything at once
+    - Cons:
+      - Takes more time to return all items at once
