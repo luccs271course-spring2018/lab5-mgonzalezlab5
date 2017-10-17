@@ -26,7 +26,7 @@
   
   * Item:
     - Pros: 
-      - Takes less time to return 1 item
+      - Takes less time to return 1 item and it's more clear what was added or removed.
     - Cons:
       - Only get 1 item at a time. Can't see everything at once.
   
